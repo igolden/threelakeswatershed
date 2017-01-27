@@ -1,0 +1,93 @@
+# Site settings
+title: Three Lakes Watershed Assocation
+description: >
+  THE THREE LAKES WATERSHED ASSOCIATION is a volunteer organization focused on protecting and improving the quality of life in the area of Lake Granby Reservoir, Shadow Mountain Reservoir, and Grand Lake.
+
+email: info@threelakeswater.org
+
+logourl: /img/logo.png # Your logo or avatar
+
+author: THE THREE LAKES WATERSHED ASSOCIATION
+
+author_thumbnail: /img/user1.png # default author avatar
+
+# Theme additions - please update the default values if you intend to use these variables
+
+google_analytics_id: 'UA-81349705-1' # Your google analytics ID (e.g. 'UA-XXXXXXXX-X')
+google_api_key: 'AIzaSyDhv4vZqhxL6r15V6Kh-KLuhH5YqZy9JNo' # Your Google API key for Maps
+
+
+theme:
+  # Company contact info
+  contact:
+    company:  Three Lakes Watershed Assocation
+    address:  P.O. Box 1718
+    city:     Grand Lake
+    state:    CO
+    zip:      80447
+    country:  USA
+    phone:
+    latlng:   40.2492588,-105.8291794,18.08z # (e.g. '39.733536,-104.992611')
+    twitter:                 # (e.g. 'twitter')
+    facebook: Three-Lakes-Watershed-Association-249720228385052              # (e.g. 'facebook')
+    github:                         # (e.g. 'github')
+    instagram:                      # (e.g. 'instagram')
+    flickr:                         # (e.g. 'groups/2772799@N24/')
+    linkedin:                       # (e.g. 'company/linkedin')
+    youtube:                        # (e.g. 'channel/UCovWO5keLOLcLu8WdO-ABJw')
+
+
+  disqus_id:   bowtieexample        # From your Disqus account (e.g. 'bowtieexample')
+
+  addthis_id:                       # From your Add This account (e.g. 'ra-00000a0a00a00aaa')
+
+# Permalinks
+permalink:           /:categories/:title/
+relative_permalinks: false
+
+gems: [jekyll-paginate]
+
+# Pagination config
+paginate: 5
+paginate_path: /page/:num
+
+# Jekyll build/resource locations
+
+# source:  .
+# destination: ./_site
+# plugins_dir: null
+# layouts_dir: ./_layouts
+# data_dir:    ./_data
+# includes_dir: ./_includes
+
+# Jekyll Handling Reading
+include:    [] # Specify files to be included in build that may be otherwise ignored (e.g. '[.htaccess]')
+
+keep_files: [] # Files/Folders located inside the ./_site folder to be retained on build (e.g.'[.git, .svn]')
+
+# Files/Folders to be excluded from generated '_site' folder
+exclude:
+  - .gitignore
+  - .sass-cache
+
+# define collection objects
+collections:
+  sections:
+    output: false
+  slides:
+    output: false
+  board:
+    output: false
+  products:
+    output: false
+  documents:
+    output: false
+  initiatives:
+    output: false
+  gallery:
+    output: false
+  # authors:
+    # output: false
+    #
+
+

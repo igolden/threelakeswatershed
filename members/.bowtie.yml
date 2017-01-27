@@ -1,0 +1,55 @@
+# /members/.bowtie.yml
+---
+
+permits:
+  - plans:
+      - annualmembership
+      - $250 recurring donation
+      - Two Members
+      - Three Members
+      - Four Members
+      - Five Members
+      - Six Members
+
+  - profile:
+      purchases:
+        product_206934815e: true
+
+  - profile:
+      purchases:
+        product_291a873784: true
+
+  - profile:
+      purchases:
+        product_eecd222e14: true
+
+  - profile:
+      purchases:
+        product_fe519e46e5: true
+
+  - profile:
+      purchases:
+        product_45122ebb4b: true
+
+  - profile:
+      purchases:
+        product_a00d292bd3: true
+
+  - profile:
+      purchases:
+        product_a00d292bd3: true
+
+  - profile:
+      purchases:
+        product_2fdc3fe854: true
+
+  - profile:
+      purchases:
+        product_ae618c4512: true
+
+
+  - profile:
+      purchases:
+        product_dbe7c192bd: true
+
+  #status: registered

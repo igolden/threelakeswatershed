@@ -1,0 +1,16 @@
+<div class="initiative clearfix">
+  <ul class="row">
+    {% assign initiatives = site.initiatives | sort:'name' %}
+    {% for item in initiatives %}
+    <li>
+      {% if item.img_path %}
+      <img src="{{ item.img_path }}" alt="{{ item.title }}"/>
+      {% endif %}
+      <h3 class="title">{{ item.title }}</h3>
+      <p>{{ item.description }} &nbsp; {% if item.cta.btnLink %}
+      <a role="button" class="btn-more text-info" href="{{item.cta.btnLink}}">{{item.cta.btnText}} <i class="fa fa-chevron-right text-info" style="font-size:.8em !important;"></i></a>
+      {% endif %}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

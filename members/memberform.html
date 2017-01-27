@@ -1,0 +1,259 @@
+---
+layout: login
+permalink: /members/form/
+title: Membership Form
+subtitle:
+masthead-img: false
+masthead-img-pat: false
+exclude_from_nav: true
+style:
+  stickyfooter: true
+---
+
+{% include section.html location="membership" %}
+
+<form id="membership">
+<h4>Additional Membership Information:</h4>
+<br>
+
+<div class="form-group">
+  <label>Phone Number: (home)</label>
+  <input  id="profile_phone" class="form-control" type="text" name="profile[phone]" type="text" placeholder="303-123-4567">
+</div>
+
+<div class="form-group">
+<label>Alt Phone: (Grand Lake)</label>
+  <input id="profile_alt_phone" class="form-control" type="text" name="profile[alt_phone]" type="text" placeholder="303-123-4567">
+</div>
+
+<div class="form-group">
+<label>Grand County Address:</label>
+  <input  id="profile_grandlake_address" class="form-control" type="text" name="profile[grandlake_address]" type="text" placeholder="123 Main St">
+</div>
+
+<div class="form-group row">
+  <div class="form-group col-xs-6">
+  <label>City:</label>
+    <input  id="profile_grandlake_address_city" class="form-control" type="text" name="profile[grandlake_address_city]" type="text" placeholder="Grand Lake">
+  </div>
+
+  <div class="form-group col-xs-6">
+  <label>Zip:</label>
+    <input  id="profile_grandlake_address_zip" class="form-control" type="text" name="profile[grandlake_address_zip]" type="text" placeholder="80447">
+  </div>
+</div>
+
+<h5 class="members">Members</h5>
+
+<div class="form-group">
+  <label>Member 1:</label>
+  <input  id="profile_member_name_1" class="form-control" type="text" name="profile[member_name_one]" type="text" placeholder="First Last">
+  <button class="small btn btn-sm btn-info pull-left" type="button" data-toggle="collapse" data-target="#accordion-mem2" aria-expanded="false" aria-controls="accordion-mem2">
+  Add Member</a>
+  </button>
+<div class="clearfix"><p>&nbsp;</p></div>
+</div>
+
+
+<div class="collapse" id="accordion-mem2">
+  <div class="form-group">
+    <label>Member 2:</label>
+    <input  id="profile_member_name_2" class="form-control" type="text" name="profile[member_name_two]" type="text" placeholder="First Last">
+    <button class="small btn btn-sm btn-info pull-left" type="button" data-toggle="collapse" data-target="#accordion-mem3" aria-expanded="false" aria-controls="accordion-mem3">
+    Add Member</a>
+    </button>
+  </div>
+<div class="clearfix"><p>&nbsp;</p></div>
+</div>
+
+
+
+<div class="collapse" id="accordion-mem3">
+  <div class="form-group">
+    <label>Member 3:</label>
+    <input  id="profile_member_name_3" class="form-control" type="text" name="profile[member_name_three]" type="text" placeholder="First Last">
+    <button class="small btn btn-sm btn-info pull-left" type="button" data-toggle="collapse" data-target="#accordion-mem4" aria-expanded="false" aria-controls="accordion-mem4">
+    Add Member</a>
+    </button>
+  </div>
+<div class="clearfix"><p>&nbsp;</p></div>
+</div>
+
+
+<div class="collapse" id="accordion-mem4">
+  <div class="form-group">
+    <label>Member 4:</label>
+    <input  id="profile_member_name_4" class="form-control" type="text" name="profile[member_name_four]" type="text" placeholder="First Last">
+    <button class="small btn btn-sm btn-info pull-left" type="button" data-toggle="collapse" data-target="#accordion-mem5" aria-expanded="false" aria-controls="accordion-mem5">
+    Add Member</a>
+    </button>
+  </div>
+<div class="clearfix"><p>&nbsp;</p></div>
+</div>
+
+
+<div class="collapse" id="accordion-mem5">
+  <div class="form-group">
+    <label>Member 5:</label>
+    <input  id="profile_member_name_5" class="form-control" type="text" name="profile[member_name_five]" type="text" placeholder="First Last">
+    <button class="small btn btn-sm btn-info pull-left" type="button" data-toggle="collapse" data-target="#accordion-mem6" aria-expanded="false" aria-controls="accordion-mem6">
+    Add Member</a>
+    </button>
+  </div>
+<div class="clearfix"><p>&nbsp;</p></div>
+</div>
+
+
+<div class="collapse" id="accordion-mem6">
+  <div class="form-group">
+    <label>Member 6:</label>
+    <input  id="profile_member_name_6" class="form-control" type="text" name="profile[member_name_six]" type="text" placeholder="First Last">
+  </div>
+<div class="clearfix"><p>&nbsp;</p></div>
+</div>
+
+<div class="clearfix"></div>
+
+
+<hr>
+
+<h5>Volunteer Information</h5>
+
+<div class='form-group'>
+  <div class="checkbox">
+    <label class="text">
+      <input id="profile_volunteer_optin" type="checkbox" name="profile[volunteer_optin]" data-toggle="collapse" data-target="#volunteer-info" aria-expanded="false" aria-controls="volunteer-info" > I am interested in getting involved as a volunteer with TLWA
+    </label>
+  </div>
+</div>
+
+<div class="collapse" id="volunteer-info"><!-- collapsed volunteer form -->
+  <div class="form-group">
+  <label>What elements of the three lakes area are you most interested in?</label>
+    <input  id="profile_org_interest" class="form-control" type="text" name="profile[org_interest]" type="text">
+  </div>
+
+  <div class="form-group">
+    <label>If you'd like to volunteer, what areas do you believe you can best assist?</label>
+    <textarea rows="5" class="form-control" id="profile_volunteer_interest" type="text" name="prospect[volunteer_interest]" type="text" placeholder=""></textarea>
+  </div>
+</div>
+
+<div class='form-group'>
+  <div class="checkbox">
+    <label class="text">
+      <input id="profile_mailing_list_optin" type="checkbox" name="profile[mailing_list_optin]" checked checked="checked"> Subscribe me to the Newsletter
+    </label>
+  </div>
+</div>
+
+<div class='form-actions text-center'>
+  <input id="update_profile" class="button btn btn-success" name="commit" type="submit" value="Submit">
+</div>
+
+<div class='form-response text-center' style="display:none;">
+<p>Thank you for joining Three Lakes Watershed Association.  We are a volunteer organization committed to addressing issues that impact the quality of life in the three lakes area.  Our current focus is directed towards improving the water quality of our lakes.</p>
+</div>
+<br>
+</form>
+
+&nbsp;
+
+<p>Three Lakes Watershed Association<br>
+New Members Information<br>
+P.O. Box 1718<br>
+Grand Lake, CO 80447</p>
+
+
+<script type="text/javascript">
+$(window).bind("load", function() {
+  bowtie.user.profile(function(profile){
+    $("#profile_phone").val(profile.phone);
+    $("#profile_alt_phone").val(profile.alt_phone);
+    $("#profile_grandlake_address").val(profile.grandlake_address);
+    $("#profile_grandlake_address_city").val(profile.grandlake_address_city);
+    $("#profile_grandlake_address_zip").val(profile.grandlake_address_zip);
+    $("#profile_volunteer_optin").prop('checked', (profile.volunteer_optin == 'true'));
+    $("#profile_org_interest").val(profile.org_interest);
+    $("#profile_volunteer_interest").val(profile.volunteer_interest);
+    $("#profile_mailing_list_optin").prop('checked', (profile.mailing_list_optin == 'true'));
+    $("#profile_member_name_1").val(profile.member_name_one);
+    $("#profile_member_name_2").val(profile.member_name_two);
+    $("#profile_member_name_3").val(profile.member_name_three);
+    $("#profile_member_name_4").val(profile.member_name_four);
+    $("#profile_member_name_5").val(profile.member_name_five);
+    $("#profile_member_name_6").val(profile.member_name_six);
+  });
+
+$(function() {
+  var bowtie_profile = bowtie.user.profile(function(profile){
+  if (profile.member_name_two) { $('#accordion-mem2').addClass('in');};
+  if (profile.member_name_three) { $('#accordion-mem3').addClass('in');};
+  if (profile.member_name_four) { $('#accordion-mem4').addClass('in');};
+  if (profile.member_name_five) { $('#accordion-mem5').addClass('in');};
+  if (profile.member_name_six) { $('#accordion-mem6').addClass('in');};
+  if (profile.member_name_six) { $('#accordion-mem6').addClass('in');};
+  if (profile.volunteer_optin == 'true') { $('#volunteer-info').addClass('in');};
+  });
+
+});
+
+  $(function(){
+    $("#update_profile").on("click", function(){
+      var profilePhone = $('#profile_phone').val();
+      var profileAltPhone = $('#profile_alt_phone').val();
+      var profileAddress = $('#profile_grandlake_address').val();
+      var profileAddressCity = $('#profile_grandlake_address_city').val();
+      var profileAddressZip = $('#profile_grandlake_address_zip').val();
+      var profileVolunteerOptin = $('#profile_volunteer_optin:checked').val();
+      var profileVolunteerInterest = $('#profile_volunteer_interest').val();
+      var profileOrgInterest = $('#profile_org_interest').val();
+      var profileMailingListOptin = $('#profile_mailing_list_optin:checked').val();
+      var profileMemberNameOne = $('#profile_member_name_1').val();
+      var profileMemberNameTwo = $('#profile_member_name_2').val();
+      var profileMemberNameThree = $('#profile_member_name_3').val();
+      var profileMemberNameFour = $('#profile_member_name_4').val();
+      var profileMemberNameFive = $('#profile_member_name_5').val();
+      var profileMemberNameSix = $('#profile_member_name_6').val();
+
+      var profileData = {
+        phone: profilePhone,
+        alt_phone: profileAltPhone,
+        grandlake_address: profileAddress,
+        grandlake_address_city: profileAddressCity,
+        grandlake_address_zip: profileAddressZip,
+        volunteer_optin: profileVolunteerOptin ? true : false,
+        volunteer_interest: profileVolunteerInterest,
+        org_interest: profileOrgInterest,
+        mailing_list_optin: profileMailingListOptin ? true : false,
+        member_name_one: profileMemberNameOne,
+        member_name_two: profileMemberNameTwo,
+        member_name_three: profileMemberNameThree,
+        member_name_four: profileMemberNameFour,
+        member_name_five: profileMemberNameFive,
+        member_name_six: profileMemberNameSix,
+      };
+
+      bowtie.user.profile(profileData, function(){
+        $('.form-group').hide();
+        $('.form-actions').hide();
+        // Extra cleanup after submission
+        $('h4').hide();
+        $('.members').hide();
+        $('#accordion-mem2').hide();
+        $('#accordion-mem3').hide();
+
+        $('.form-response').show();
+      }.bind(this));
+
+      return false;
+    });
+  });
+});
+
+window.onload = function updateProfile(){
+  bowtie.user.profile({
+  ActiveMember: true
+  });
+}
+</script>
